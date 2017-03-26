@@ -1,0 +1,10 @@
+# awk is a commom commad to classify and help to analyze the data.
+# Here I use this to figure out the problem.
+# you can use the command to install the awk
+# awk can help import the data
+# awk --version can check the version of what you use
+#awk -F":"NR>=2 && NR<=6{print NR,$1} /etc/passwd
+#-F means that point out
+# ":" means that chop the line into two parts
+#NR>=8 && NR<=15: this part  is a pattern to withdraw the line 2 to lin 6
+#The awk include the [pattern] & [option]

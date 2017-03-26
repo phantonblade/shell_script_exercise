@@ -1,0 +1,44 @@
+# awk is a commom commad to classify and help to analyze the data.
+# Here I use this to figure out the problem.
+# you can use the command to install the awk
+# awk can help import the data
+# awk --version can check the version of what you use
+#awk -F":"NR>=2 && NR<=6{print NR,$1} /etc/passwd
+#-F means that point out
+# ":" means that chop the line into two parts
+#NR>=8 && NR<=15: this part  is a pattern to withdraw the line 2 to lin 6
+#NR(number of record 
+#$0 it means the whole line or record
+#The awk include the [pattern] & [option]
+
+#the fundamental behaviors [pattern][option]
+example 1:
+	awk -F":"'NR5>=&&NR<=18'{print NR,$1} /etc/passwd
+
+#only the patterns
+example 2:
+	awk -F":"NR>=2&&NR<=6' /etc/passwd
+
+#you can compare the difference of the example 1 and example 
+example 3 :
+	awk -F":"{print NR,$1}' /etc/passwd
+#the example 3 only have the action
+
+
+#NR==1 means the condition satisfied
+#==================================================#
+
+
+example 4
+#linux will comply some conndition to split the string
+echo "a b c d"| awk '{print $2}'
+
+
+example 5
+echo "a b c d" | awk-F'''{for(i=2;i<=NF;i++){printf $i""} printf"\n"}'}
+echo "a b c d" | awk '{ print substr($0, index($0, " ") + 1); }'
+
+
+
+
+
