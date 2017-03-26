@@ -1,0 +1,10 @@
+#The mode is head[parameter][File]
+#command  parameter:
+#-q hide the filename
+#-v express the filename
+#-n express the number of lines
+
+#example:
+	cat [filename]
+	head -n 10 [filename]
+
